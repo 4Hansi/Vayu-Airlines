@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Official Web Page of Vayu Airlines -->
+<!-- Login Page -->
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="vayu-styles.css">
+        <title>Vayu Airlines - Login</title>
+        <link rel="icon" type="image/x-icon" href="Favicon.png">
+    </head>
+
+    <body>
+        <header>
+            <a href="Vayu Airlines - Home.html" alt="Vayu Airlines" title="Vayu Airlines"><img src="Logo.png" class="logo" title="Vayu Airlines"></a>
+
+            <div class="header-center">
+                <p class="brand-font">Vayu Airlines</p>
+            </div>
+
+            <nav class="nav-bar">
+                <p class="font1"><a href="vayu-check-flights.html" class="nav-link">Check Flights</a></p>
+                <p class="font1"><a href="vayu-contact-us.html" class="nav-link">Contact Us</a></p>
+                <p class="font1"><a href="vayu-manage-bookings.html" class="nav-link">Manage Bookings</a></p>
+                <p class="font1"><a href="vayu-login.html" class="nav-link">Login</a></p>
+                <p class="font1"><a href="vayu-careers.html" class="nav-link">Find A Career With Us</a></p>
+                <p class="font1"><a href="vayu-about.html" class="nav-link">About Vayu Airlines</a></p>
+            </nav>
+        </header>
+
+        <article>
+            <section>
+                <div class="form-container">
+                    <div class="form-section">
+                        <div class="form-card">
+                            <p font="font6">Login</p>
+                            <form action="#">
+                                <p>Phone Number : <input class="form-input" id="phonein" type="tel" placeholder="Username" required></p>
+                                <p>OTP sent to Mobile Number : <input class="form-input" id="passwordin" type="password" placeholder="Password" required></p>
+                                <button class="form-button" type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="form-container">
+                    <p class="font3">No account yet? No worries, create one below 👇</p>
+                    <div class="form-section">
+                        <div class="form-card">
+                            <p font="font6">Create a Vayu Account</p>
+                            <form action="#">
+                                <label class="font6" for="options" required>Title : </label>
+                                <select id="options" name="options" class="option">
+                                    <option value="mrs">Mrs.</option>
+                                    <option value="mr">Mr.</option>
+                                    <option value="miss">Miss</option>
+                                </select>
+                                <p>First Name : <input class="form-input" id="fname" type="text" placeholder="First Name" required></p>
+                                <p>Last Name : <input class="form-input" id="lname" type="text" placeholder="Last Name" required></p>
+                                <p>Email : <input class="form-input" id="email" type="email" placeholder="Email" required></p>
+                                <p>Phone : <input class="form-input" id="phone" type="tel" placeholder="Phone Number" required></p>
+                                <label class="font6" for="nationality" required>Nationality : </label>
+                                <select id="nationality" name="nationality" class="option">
+                                    <option></option>
+                                </select>
+                                <p>Date of Birth : <input class="form-input" id="dob" type="date" required></p>
+                                <button class="form-button" type="submit">Create</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <script src="vayu-script.js"></script>
+    </body>

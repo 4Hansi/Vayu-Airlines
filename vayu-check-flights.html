@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Official Web Page of Vayu Airlines -->
+<!-- Check Flights Page -->
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="vayu-styles.css">
+        <title>Vayu Airlines - Check Flights</title>
+        <link rel="icon" type="image/x-icon" href="Favicon.png">
+    </head>
+
+    <body>
+        <header>
+            <a href="Vayu Airlines - Home.html" alt="Vayu Airlines" title="Vayu Airlines"><img src="Logo.png" class="logo" title="Vayu Airlines"></a>
+
+            <div class="header-center">
+                <p class="brand-font">Vayu Airlines</p>
+            </div>
+
+            <nav class="nav-bar">
+                <p class="font1"><a href="vayu-check-flights.html" class="nav-link" target="_blank">Check Flights</a></p>
+                <p class="font1"><a href="vayu-contact-us.html" class="nav-link" target="_blank">Contact Us</a></p>
+                <p class="font1"><a href="vayu-manage-bookings.html" class="nav-link" target="_blank">Manage Bookings</a></p>
+                <p class="font1"><a href="vayu-login.html" class="nav-link"target="_blank">Login</a></p>
+                <p class="font1"><a href="vayu-careers.html" class="nav-link" target="_blank">Find A Career With Us</a></p>
+                <p class="font1"><a href="vayu-about.html" class="nav-link" target="_blank">About Vayu Airlines</a></p>
+            </nav>
+        </header>
+
+        <article>
+            <h2 class="font1">Check Flights</h2>
+            <p class="font2">Enter your travel details to find available flights.</p>
+        </article>
+
+        <form class="form-container" id="flight-form">
+            <div class="form-section">
+                <div class="form-card">
+                    <label for="departure" class="font6">Departure:</label>
+                    <input type="text" id="departure" name="departure" class="form-input" placeholder="City or Airport" required>
+                </div>
+                <div class="form-card">
+                    <label for="destination" class="font6">Destination:</label>
+                    <input type="text" id="destination" name="destination" class="form-input" placeholder="City or Airport" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-card">
+                    <label for="date" class="font6">Date:</label>
+                    <input type="date" id="date" name="date" class="form-input" required>
+                </div>
+                <div class="form-card">
+                    <label for="passengers" class="font6">Passengers:</label>
+                    <input type="number" id="passengers" name="passengers" class="form-input" value="1" min="1" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-card">
+                    <label for="class" class="font6">Class:</label>
+                    <select id="class" name="class" class="option">
+                        <option value="economy">Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first">First</option>
+                    </select>
+                 </div>
+                 <div class="form-card">
+                    <button type="submit" class="form-button" id="search-flights">Search Flights</button>
+                 </div>
+            </div>
+        </form>
+
+        <section id="search-results" class="form-container" style="display: none;">
+            <article class="form-card" >
+                <h3 class="font1">Available Flights</h3>
+                <ul id="flights-list"  class="font3">
+                    </ul>
+            </article>
+        </section>
+
+        <footer>
+            <p class="font5">&copy; 2025 Your Company Name. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
